@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link Font Awesome -->
+  <script src="https://kit.fontawesome.com/c46e2ab208.js" crossorigin="anonymous"></script>
+
+  <!-- Link Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Raleway:wght@800&display=swap"
+    rel="stylesheet">
+
+  <title>Eduardo Angelini Carvalho</title>
+</head>
+
+<body>
+
+  <section class="container">
+
+    <!-- NAV SECTION -->
+
+    <header>
+      <nav class="nav">
+        <div class="nav__links">
+          <a href="../index.html">Início</a>
+          <a href="./index.html">Cadastrar</a>
+        </div>
+        <div class="nav__icons">
+          <a href="https://github.com/Eduangelini" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/eduangelini/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/eduardoangelinicarvalho_" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- FORM SECTION -->
+
+    <section class="container__form">
+      <h2>CADASTRO</h2>
+      <p class="subtitle">
+        Se cadastre para receber as novidades e as promoções da melhor hamburgueria do mundo da técnologia.
+      </p>
+      <form id="form" class="form" method="post" action="https://653042c26c756603295e7ac1.mockapi.io/api/v1/burguer">
+        <label for="nome">Nome*</label>
+        <input class="input" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+
+        <label for="email">Email*</label>
+        <input class="input" type="email" name="email" id="email" placeholder="Digite seu melhor email" required>
+
+        <label for="whatsapp">WhatsApp*</label>
+        <input class="input" type="tel" name="whatsapp" id="whatsapp" onkeyup="handlePhone(event)"
+          placeholder=" Digite seu WhatsApp" required>
+
+        <input type="submit" value="Cadastrar" class="button input">
+      </form>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer>
+      <p>Desenvolvido com &hearts; por <a href="https://www.linkedin.com/in/eduangelini/" target="_blank">#dd.</a></p>
+    </footer>
+
+
+  </section>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
